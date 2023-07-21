@@ -35,7 +35,7 @@ public class HomePageStepDefinitions {
         instance.getHomePage().waitForPageLoadComplete(TIME);
         instance.getHomePage().clickNextDayEvents();
         instance.getHomePage().waitForPageLoadComplete(TIME);
-        instance.getHomePage().implicitWait(120);
+        instance.getHomePage().implicitWait(150);
         instance.getHomePage().clickOnFirstEvent();
         log.info("Event Page is opened");
         instance.getHomePage().implicitWait(TIME);
