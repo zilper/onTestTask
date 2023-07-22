@@ -31,11 +31,11 @@ public class HomePageStepDefinitions {
     @When("User clicks on first not started event")
     public void userClicksOnFirstNotStartedEvent() {
         instance.getHomePage();
-        instance.getHomePage().implicitWait(TIME);
-        instance.getHomePage().waitForPageLoadComplete(TIME);
+        instance.getHomePage().waitForAjax(TIME);
         instance.getHomePage().clickNextDayEvents();
-        instance.getHomePage().waitForPageLoadComplete(TIME);
-        instance.getHomePage().implicitWait(150);
+        instance.getHomePage().waitForAjax(TIME);
+        instance.getHomePage().implicitWait(10);
+        instance.getHomePage().waitForAjax(TIME);
         instance.getHomePage().clickOnFirstEvent();
         log.info("Event Page is opened");
         instance.getHomePage().implicitWait(TIME);
